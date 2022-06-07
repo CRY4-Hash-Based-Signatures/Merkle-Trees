@@ -3,6 +3,7 @@ use std::time::Instant;
 use sha2::{Sha256, Digest, digest::FixedOutputReset};
 use rand::{Rng, RngCore, thread_rng};
 use merkle_trees_cry4::{OneTimeScheme, MerklePublicKey, MerkleSecretKey};
+use itertools::izip;
 
 struct BenchResults {
     keygen_times: Vec<u128>,
