@@ -11,6 +11,7 @@ struct BenchResults {
     verifying_times: Vec<u128>,
 }
 
+#[allow(non_snake_case)]
 fn merkle_bench<D: Digest + Clone + FixedOutputReset + 'static>(i: usize, scheme: OneTimeScheme, N: usize) -> BenchResults {
     let mut sk;
     let mut pk;
