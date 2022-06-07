@@ -11,3 +11,14 @@ repository = "https://github.com/CRY4-Hash-Based-Signatures/Merkle-Trees"
 [dependencies]
 one-time-signatures-cry4 = "0.1.0"
 sha2 = "0.10.2"
+
+rand = { version = "0.8.5", optional = true }
+itertools = { version = "0.10.3", optional = true }
+
+
+[features]
+build-binary = ["rand", "itertools"]
+
+[[bin]]
+name = "benchmark"
+required-features = ["build-binary"]
