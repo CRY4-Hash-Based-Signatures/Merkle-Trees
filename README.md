@@ -16,3 +16,9 @@ Implementation of a Merkle tree using one time signatures, such as Lamport or Wi
     let leaf_index = 66;
     let sig = sk.sign_arbitrary(message, leaf_index).unwrap();
     pk.verify_arbitrary(message, &sig).unwrap();
+
+## Benchmark
+
+To build the benchmark file run:
+
+    cargo build --features build-binary --bin benchmark
