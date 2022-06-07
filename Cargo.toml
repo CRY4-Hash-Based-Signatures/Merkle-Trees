@@ -1,0 +1,13 @@
+[package]
+name = "merkle-trees-cry4"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Implementation of Merkle trees with one time signatures as leafs"
+repository = "https://github.com/CRY4-Hash-Based-Signatures/Merkle-Trees"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+one-time-signatures-cry4 = "0.1.0"
+sha2 = "0.10.2"
